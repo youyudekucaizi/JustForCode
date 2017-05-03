@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+
+<hibernate-mapping package="com.sky.entity">
+
+	<class name="com.sky.entity.Users" table="users" catalog="bookshop">
+		<id name="id" type="java.lang.Integer">
+			<column name="Id" not-null="true"></column>
+			<generator class="native"></generator>
+
+		</id>
+		<property name="loginName" type="java.lang.String">
+			<column name="LoginName"></column>
+		</property>
+		<property name="loginPwd" type="java.lang.String">
+			<column name="LoginPwd"></column>
+		</property>
+
+	</class>
+</hibernate-mapping>
+
